@@ -13,20 +13,20 @@ public class Snake
 	private Body b;	//Creates the body of the snake
 	
 	//Location and Movement
-	private int _x, _y;  			//the snake head location
+	private int _x, _y;  		//the snake head location
 	private final int _step = 10;   //the step size for each frame;
 	private int _stepX, _stepY;  	//the steps to add by any direction, Changes by KeyPress
-	private int _lastMove; 			//remember the last move to block moving backwards  
+	private int _lastMove; 		//remember the last move to block moving backwards  
 	
 	//Snake Links
 	private int _linksToAdd; //Gets how many links to add
 	
 	//Apple
 	private int[] _appleLoc = new int[2];   	//Apple location
-	private final int _appleSize = 40;			//Apple size 
-	private Boolean _eaten;  					//Check if the apple have been eaten
-	private final int MAX_APPLE_LOCATION = 550; //Apple location borders
-	private final int MIN_APPLE_LOCATION = 20;  //For the random location
+	private final int _appleSize = 40;		//Apple size 
+	private Boolean _eaten;  			//Check if the apple have been eaten
+	private final int MAX_APPLE_LOCATION = 550; 	//Apple location borders
+	private final int MIN_APPLE_LOCATION = 20;  	//For the random location
 	
 	//Images
 	private Image imgSnake;
@@ -49,13 +49,13 @@ public class Snake
 		//Snake
 		b = new Body();
 		_linksToAdd = 6; 	//first body length
-		_x = 200;		 	//starting snake location X
-		_y = 200;		 	//starting snake location Y
+		_x = 200;		//starting snake location X
+		_y = 200;		//starting snake location Y
 		_stepX = _step;  	//first move direction
-		_stepY = 0;		 	//first move direction
+		_stepY = 0;		//first move direction
 		
 		//Apple
-		_appleLoc[0] = 200; //first apple location X
+		_appleLoc[0] = 200; 	//first apple location X
 		_appleLoc[1] = 150;	//first apple location Y
 	}
 	
