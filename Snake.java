@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 
 public class Snake 
 {
-	private Body b;	//Creates the body of the snake
+	private Body b;	 //Creates the body of the snake
 	
 	//Location and Movement
 	private int _x, _y;  		//the snake head location
